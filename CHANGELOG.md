@@ -1,5 +1,8 @@
 # Changelog
 
+## __WORK IN PROGRESS__
+* (AlCalzone) `typescript` must be a real dependency
+
 ## 1.6.0 (2019-01-17)
 * (AlCalzone) Allow choosing quote style in TypeScript (fixes #33)
 * (AlCalzone) Ensure JS files contain `"use strict";` (fixes #53)

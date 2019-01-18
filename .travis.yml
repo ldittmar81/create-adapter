@@ -1,0 +1,25 @@
+language: node_js
+node_js:
+  - '8'
+  - '10'
+  - '11'
+os:
+  - linux
+  - osx
+  - windows
+install:
+  - npm ci
+script:
+  # First run a normal test pass
+  - npm test
+
+  # Then test on a production environment
+  # Therefore build the project
+  - npm run build
+  # Remove all dev dependencies
+  - npm ci --only=production
+  # Try to execute the creator -> start npx, wait 90s and check the exit code
+  - timeout 90 npx . ; EXIT_CODE=$?
+  # It should be 124 (timeout has passed)
+notifications:
+email: false
