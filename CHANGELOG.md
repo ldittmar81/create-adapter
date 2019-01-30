@@ -1,5 +1,8 @@
 # Changelog
 
+## Next
+* (ldittmar) Added Yandex Translation for Gulp (free key https://translate.yandex.com/developers) -> gulp translate --yandex KEY
+
 ## 1.8.0 (2019-01-24)
 * (AlCalzone & jogibear9988) Add ES6 class support for the main file
 
